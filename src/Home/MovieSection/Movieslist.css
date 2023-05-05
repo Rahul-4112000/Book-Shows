@@ -1,0 +1,144 @@
+
+
+
+.movie-list-wrapper section {
+    width: 100%;
+    margin-block: 30px;
+}
+
+section h1 {
+    font-weight: 300;
+}
+
+section .shows {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-block: 10px;
+    width: 100%;
+}
+
+.shows .show-container {
+    margin: 10px 0;
+    width: calc(16.73% - 5px);
+    flex-grow: 1;
+    min-width: 180px;
+    max-width: 220px;
+}
+
+.show-container .show-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.show-image img {
+    display: block;
+    width: 100%;
+    transition: 500ms all;
+    scale: 1.0;
+    cursor: pointer;
+}
+
+.show-image img:hover {
+    scale: 1.1;
+}
+
+
+
+.show-image .rating {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    top: 0px;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100%;
+    background: var(--bg-color);
+    color: white;
+}
+
+.rating span.rating-icon {
+    color: greenyellow;
+    font-size: medium;
+}
+
+.rating span.rating-value {
+    font-size: small;
+    margin-left: 2px;
+}
+
+.show-container .show-content {
+    padding: 15px 15px 15px 10px;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.show-content > * {
+    margin-bottom: 10px;
+}
+
+.show-content .name {
+    font-size: 16px;
+    height: 45px;
+    margin: 0;
+}
+
+.show-content span.geners {
+    display: flex;
+    gap: 5px;
+    font-size: small;
+}
+
+.show-content .rating-lang {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.show-more span {
+    border: 1px solid var(--bg-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+.show-more span:hover {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+
+/* .show-content .summary {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    transition: 500ms ;
+    cursor: pointer;
+}
+
+.show-content .summary:hover {
+    background-color: white;
+    color: var(--bg-color);
+} */
+
+@media only screen and (max-width:450px) {
+    .shows .show-container {
+        min-width: 130px;
+    }
+
+    section h1 {
+        font-size: large;
+    }
+}
