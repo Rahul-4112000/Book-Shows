@@ -29,8 +29,7 @@ function Summary() {
         document.querySelector('.summary-wrapper').style.filter  = cssProp;
         document.querySelector('.about-show').style.filter  = cssProp;
     }
-
-
+    
     const { userName, totalSeats } = userDetails;
     const { state: show } = location;
     const { name, type, language, genres, status, runtime, schedule, rating, network, summary, image } = show;
@@ -121,27 +120,27 @@ function Summary() {
             <form className={`${isFormVisible && 'form-style'}`} onSubmit={bookedTickets}>
                 <h3>BOOKING SUMMARY</h3>
                 <div>
-                    <label>Show name</label>
+                    <label>Show name :</label>
                     <input type='text' value={name}></input>
                 </div>
                 <div>
-                    <label>Duration</label>
+                    <label>Duration :</label>
                     <input type='text' value={runtime}></input>
                 </div>
                 <div>
-                    <label>Time</label>
+                    <label>Time :</label>
                     <input type='text' value={time}></input>
                 </div>
                 <div>
-                    <label>Language</label>
+                    <label>Language :</label>
                     <input type='text' value={language} ></input>
                 </div>
                 <div>
-                    <label>Genres</label>
+                    <label>Genres :</label>
                     <input type='text' value={genres}></input>
                 </div>
                 <div>
-                    <label>Your name</label>
+                    <label>Your name :</label>
                     <input className='user-field' type='text' required value={userName} onChange={fillTicketDetails('userName')}></input>
                 </div>
                 <div>

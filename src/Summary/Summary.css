@@ -84,7 +84,8 @@ form {
     translate: -50% -50%;
     top: 25%;
     left: 50%;
-    width: 380px;
+    max-width: 380px;
+    width: 100%;
     min-width: 300px;
     background-color: white;
     padding: 20px;
@@ -112,6 +113,7 @@ form>h3 {
 form>div {
     display: flex;
     margin-bottom: 10px;
+    gap: 20px;
 }
 
 form>div>select {
@@ -121,12 +123,13 @@ form>div>select {
 }
 
 form>div>label {
-    width: 30%;
-    font-size: 16px;
+    width: 30% ;
+    font-size: 16px ;
+    font-weight: bold;
 }
 
 form>div>input {
-    width: 70%;
+    width: 62%;
     outline: 0;
     border: none;
     font-size: medium;
@@ -142,7 +145,6 @@ form>input {
     display: block;
     margin: auto;
     margin-top: 30px;
-    transition: all 500ms;
 }
 
 form > input:hover {
@@ -154,6 +156,7 @@ form .user-field {
     border: 1px solid darkcyan;
     border-radius: 5px;
     padding: 5px;
+    max-width: 180px;
 }
 
 .summary .confirm-palette {
@@ -207,7 +210,7 @@ form .user-field {
         flex-direction: column;
     }
 
-    form {
-        width: 355px;
+    .summary-wrapper .detailed-show-image {
+        margin: auto;
     }
 }

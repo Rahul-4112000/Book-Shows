@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Home from './Home/Home';
 import Summary from './Summary/Summary';
@@ -9,11 +8,11 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path='/Book-Shows' element={ <Home/> } />
-        <Route path='/summary' element={ <Summary/> } />
+        <Route path='/' element={<Home/>} />
+        <Route path='/summary' element={<Summary/>} />
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;
